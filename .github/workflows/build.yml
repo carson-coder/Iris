@@ -23,7 +23,7 @@ jobs:
           cache-read-only: false
 
       - name: Run build with Gradle Wrapper
-        run: ./gradlew build
+        run: ./gradlew build -debug
 
       - name: Upload built JAR (Fabric)
         uses: actions/upload-artifact@v3
